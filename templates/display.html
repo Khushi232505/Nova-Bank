@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Accounts</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        🏦 All Bank Accounts
+    </h2>
+
+    <table class="table table-bordered table-striped table-hover">
+
+        <thead class="table-dark">
+
+            <tr>
+                <th>Account No.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Mobile</th>
+                <th>Balance</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% for customer in customers %}
+
+            <tr>
+
+                <td>{{ customer.account_number }}</td>
+
+                <td>{{ customer.name }}</td>
+
+                <td>{{ customer.age }}</td>
+
+                <td>{{ customer.mobile }}</td>
+
+                <td>₹ {{ customer.balance }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+    <a href="/" class="btn btn-primary">
+        ⬅ Back Home
+    </a>
+
+</div>
+
+</body>
+
+</html>
+<a href="/" class="btn btn-secondary mt-3">
+    🏠 Back to Home
+</a>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Search Account</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+
+            <h2>Search Account</h2>
+
+        </div>
+
+        <div class="card-body">
+
+            <form action="/search" method="POST">
+
+                <input
+                    type="text"
+                    name="account_number"
+                    class="form-control mb-3"
+                    placeholder="Enter Account Number"
+                    required>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary w-100">
+
+                    Search
+
+                </button>
+
+            </form>
+            {% if customer %}
+
+<hr>
+
+<h4 class="mt-4 text-success">✅ Account Found</h4>
+
+<table class="table table-bordered mt-3">
+
+    <tr>
+        <th>Account Number</th>
+        <td>{{ customer.account_number }}</td>
+    </tr>
+
+    <tr>
+        <th>Name</th>
+        <td>{{ customer.name }}</td>
+    </tr>
+
+    <tr>
+        <th>Age</th>
+        <td>{{ customer.age }}</td>
+    </tr>
+
+    <tr>
+        <th>Gender</th>
+        <td>{{ customer.gender }}</td>
+    </tr>
+
+    <tr>
+        <th>Mobile</th>
+        <td>{{ customer.mobile }}</td>
+    </tr>
+
+    <tr>
+        <th>Address</th>
+        <td>{{ customer.address }}</td>
+    </tr>
+
+    <tr>
+        <th>Email</th>
+        <td>{{ customer.email }}</td>
+    </tr>
+
+    <tr>
+        <th>Balance</th>
+        <td>₹ {{ customer.balance }}</td>
+    </tr>
+
+</table>
+
+{% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+<a href="/" class="btn btn-secondary mt-3">
+    🏠 Back to Home
+</a>
