@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from account import create_account_web,  update_account_web, delete_account_web
-from transaction import deposit_money_web, withdraw_money_web
-from transaction import view_transaction_history_web, transfer_money_web
+from bank_transactions import deposit_money_web, withdraw_money_web
+from bank_transactions import view_transaction_history_web, transfer_money_web
 from database import customers
 
 
