@@ -1,0 +1,69 @@
+[
+    {
+        "account_number": "ACC1001",
+        "name": "khushi",
+        "age": 21,
+        "gender": "female",
+        "mobile": "9129375129",
+        "address": "kuncha bhawani das",
+        "email": "khushiitiwari@gmail.com",
+        "balance": 2400.0,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 500.0,
+                "date": "12-07-2026",
+                "time": "12:38 PM",
+                "balance_after": 2500.0
+            },
+            {
+                "type": "Withdraw",
+                "amount": 100.0,
+                "date": "12-07-2026",
+                "time": "12:42 PM",
+                "balance_after": 2400.0
+            }
+        ]
+    },
+    {
+        "account_number": "ACC1002",
+        "name": "Gaurangi Dixit",
+        "age": 20,
+        "gender": "female",
+        "mobile": "9696074456",
+        "address": "sitapur",
+        "email": "",
+        "balance": 200.0
+    },
+    {
+        "account_number": "ACC1003",
+        "name": "Yuvraj Singh",
+        "age": 21,
+        "gender": "Male",
+        "mobile": "7388032061",
+        "address": "Gorakhpur",
+        "email": "",
+        "balance": 16.0
+    },
+    {
+        "account_number": "ACC1004",
+        "name": "Situ Kumari",
+        "age": 22,
+        "gender": "Female",
+        "mobile": "7418123392",
+        "address": "Lucknow",
+        "email": "situkumari22@gmail.com",
+        "balance": 1000.0
+    },
+    {
+        "account_number": "ACC1005",
+        "name": "Khushi tiwari",
+        "age": 21,
+        "gender": "Female",
+        "mobile": "9129",
+        "address": "farukhabad",
+        "email": "khushitiwari23parul@bbdu.ac.in",
+        "balance": 2000.0,
+        "transactions": []
+    }
+]
