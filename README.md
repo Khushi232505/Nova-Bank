@@ -98,6 +98,8 @@ http://127.0.0.1:5000
 ## 📸 Screenshots
 
 You can add screenshots of the application here.
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/e670fe3c-84fd-413a-9a8e-7f35839ff177" />
+
 
 ---
 
